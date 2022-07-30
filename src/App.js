@@ -6,9 +6,10 @@ import Contact from "./Contact";
 import './App.css'
 import About from "./About"
 import { Routes, Route  } from "react-router-dom";
-const url = "http://localhost:2019/tours";
+
 
 function App() {
+  const url = "http://localhost:5000/tours";
   const [loading, setLoading] = useState(false);
   const [tours, setTours] = useState([]);
 
@@ -45,7 +46,7 @@ function App() {
     return (
       <main>
         <div className="title">
-          <h2>hello new redings
+          <h2>hello new readings
           </h2>
           <button className="btn" onClick={() => fetchTours()}>
            check on it
