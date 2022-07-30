@@ -9,7 +9,7 @@ import { Routes, Route  } from "react-router-dom";
 
 
 function App() {
-  const url = "http://localhost:5000/tours";
+  const url = "https://tourismapapi.herokuapp.com/tours";
   const [loading, setLoading] = useState(false);
   const [tours, setTours] = useState([]);
 
@@ -18,21 +18,14 @@ function App() {
     setTours(updatedTours);
   };
 
-  const fetchTours = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch(url);
-      const tours = await response.json();
-      setLoading(false);
-      setTours(tours);
-    } catch (error) {
-      setLoading(false);
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    fetchTours();
-  }, []);
+  
+function fetchTours(){
+  
+    fetch(url).then((response)=>response.json()).then((data)=>setTours(data))
+  
+
+}
+  
 
   if (loading) {
     return (
