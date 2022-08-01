@@ -1,5 +1,5 @@
  Project Name : tourism
-Written by : francis kibira
+Written by : francis kibira kariuki
 Project Description :
 this is a site can visit the best tourist attraction in the world and see the goodness of it
 Project Setup Instructions:
