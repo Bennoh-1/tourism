@@ -1,7 +1,10 @@
  Project Name : tourism
+
 Written by : francis kibira kariuki
+
 Project Description :
 this is a site can visit the best tourist attraction in the world and see the goodness of it
+
 Project Setup Instructions:
 Install json server to your machine and ensure it is done globally
 Clone the project to your local machine and on successful cloning, change the directory to the cloned folder says-my-vertinary.>>
